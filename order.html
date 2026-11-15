@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Order Form</title> 
+  <link rel="stylesheet" href="style-link.css">
+</head>
+<body>
+
+  <header>
+
+    <h1>COCOA PARADISE</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.htm">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <audio id="music" autoplay loop>
+  <source src="Instrumen Makan Malam di Restoran Italy.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+  const music = document.getElementById("music");
+
+  document.addEventListener("click", function() {
+  music.play();},
+  { once: true });
+  </script>
+  
+  <section class="content">
+
+    <h1>Chocolate Order Form</h1>
+    <form id="orderForm">
+      <label>Full Name:</label>
+      <input id="name" required>
+
+      <label>Email:</label>
+      <input id="email" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label>Select Chocolate</label>
+      <select id="chocolate" required>
+      <option value="">Choose Chocolate Option</option>
+      <option>Dark Chocolate</option>
+      <option>Milk Chocolate</option>
+      <option>Hazelnut Chocolate</option>
+      <option>Caramel Chocolate</option>
+      </select>
+
+      <label>Quantity:</label>
+      <input id="quantity" required>
+
+      <label>Address:</label>
+      <textarea id="notes"></textarea>
+      <button type="submit" class="btn">Summit Order</button>
+      
+      <p id="message"></p>
+    </form>
+
+  </section>
+
+  <footer>
+    <h3>COCOA PARADISE</h3>
+    <p>Crafting Happiness One Bite at a Time.</p>
+    <p>Email: cocoaparadise@gmail.com</p>
+    <p>Phone: +60 98721800</p>
+    <p>&copy; 2026 Cocoa Paradise</p>
+  </footer>
+
+  </body>
+  <script src="script.js"></script>
+  </html>
