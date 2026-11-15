@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>About Us</title> 
+  <link rel="stylesheet" href="style-link.css">
+</head>
+<body>
+  
+  <header>
+
+    <h1>COCOA PARADISE</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <audio id="music" autoplay loop>
+    <source src="Instrumen Makan Malam di Restoran Italy.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+  const music = document.getElementById("music");
+
+  document.addEventListener("click", function() {
+  music.play();},
+  { once: true });
+  </script>
+
+    <section class="about-banner">
+      <h1>About Cocoa Paradise</h1>
+    </section>
+
+    <section class="about-content">
+
+    <p class="intro">
+        Welcome to Cocoa Paradise, a chocolate shop dedicated to providing
+        delicious and high-quality chocolate experiences for everyone.
+    </p>
+
+
+    <div class="about-cards">
+        <div class="card">
+            <h2> Our Mission</h2>
+            <p>Our mission is to bring happiness to customers through delicious and affordable chocolates. </p>
+        </div>
+
+        <div class="card">
+            <h2> Our Vision</h2>
+            <p>To become the favourite chocolate destination for chocolate lovers of all ages.</p>
+        </div>
+    </div>
+
+    </section>
+
+    <footer>
+    <h3>COCOA PARADISE</h3>
+    <p>Crafting Happiness One Bite at a Time.</p>
+    <p>Email: cocoaparadise@gmail.com</p>
+    <p>Phone: +60 98721800</p>
+    <p>&copy; 2026 Cocoa Paradise</p>
+    </footer>
+
+  </body>
+  </html>
